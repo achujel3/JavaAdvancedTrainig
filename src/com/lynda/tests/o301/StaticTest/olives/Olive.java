@@ -2,12 +2,11 @@ package com.lynda.tests.o301.StaticTest.olives;
 
 public class Olive {
 
-    public static final long BLACK = 0x000000;
     private static int idCounter = 1;
 
     private int id;
     private OliveName name;
-    private long color = BLACK;
+    private OliveColor color = OliveColor.BLACK;
 
     public int getId() {
         return id;
@@ -17,7 +16,7 @@ public class Olive {
         this.id = id;
     }
 
-    public Olive(OliveName name, long color) {
+    public Olive(OliveName name, OliveColor color) {
         this.name = name;
         this.color = color;
         this.id = idCounter;
@@ -32,11 +31,23 @@ public class Olive {
         this.name = name;
     }
 
-    public long getColor() {
+    public OliveColor getColor() {
         return color;
     }
 
-    public void setColor(long color) {
+    public void setColor(OliveColor color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder("This is number ")
+                .append(this.getId())
+                .append(". ")
+                .append(this.getName())
+                .append(" olive and it's colour is ")
+                .append(this.getColor())
+                .append(".");
+        return stringBuilder.toString();
     }
 }

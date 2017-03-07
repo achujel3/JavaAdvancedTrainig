@@ -8,9 +8,9 @@ public class OliveJar {
 
     static {
         olives = new ArrayList<>();
-        olives.add(new Olive(OliveName.KALAMATA, Olive.BLACK));
-        olives.add(new Olive(OliveName.KALAMATA, Olive.BLACK));
-        olives.add(new Olive(OliveName.KALAMATA, Olive.BLACK));
+        olives.add(new Olive(OliveName.KALAMATA, OliveColor.BLACK));
+        olives.add(new Olive(OliveName.KALAMATA, OliveColor.BLACK));
+        olives.add(new Olive(OliveName.KALAMATA, OliveColor.BLACK));
     }
 
 }
