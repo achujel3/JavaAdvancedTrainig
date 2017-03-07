@@ -1,6 +1,6 @@
 package com.lynda.tests.o301.StaticTest.olives;
 
-public class Olive {
+public class Olive implements Comparable<Olive>{
 
     private static int idCounter = 1;
 
@@ -56,5 +56,12 @@ public class Olive {
                 .append(this.getColor())
                 .append(".");
         return stringBuilder.toString();
+    }
+
+    @Override
+    public int compareTo(Olive olive) {
+        String s1 = this.getClass().getSimpleName();
+        String s2 = olive.getClass().getSimpleName();
+        return s1.compareTo(s2);
     }
 }

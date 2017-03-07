@@ -32,6 +32,8 @@ public class MainHashSetTest {
         olives.remove(ligurio);
         System.out.println("There are " + olives.size() + " olives in the set.");
 
+        System.out.println(olives);
+
     }
 
 }

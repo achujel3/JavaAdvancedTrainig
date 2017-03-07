@@ -7,7 +7,7 @@ import com.lynda.tests.o301.StaticTest.olives.OliveName;
 public class Picholine extends Olive{
 
     public Picholine(){
-        super(OliveName.LIGURIO, OliveColor.GREEN);
+        super(OliveName.PICHOLINE, OliveColor.GREEN);
     }
 
 }
