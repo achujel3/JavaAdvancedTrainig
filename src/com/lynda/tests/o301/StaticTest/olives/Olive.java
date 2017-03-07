@@ -6,7 +6,7 @@ public class Olive {
     private static int idCounter = 1;
 
     private int id;
-    private String name;
+    private OliveName name;
     private long color = BLACK;
 
     public int getId() {
@@ -17,18 +17,18 @@ public class Olive {
         this.id = id;
     }
 
-    public Olive(String name, long color) {
+    public Olive(OliveName name, long color) {
         this.name = name;
         this.color = color;
         this.id = idCounter;
         idCounter++;
     }
 
-    public String getName() {
+    public OliveName getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(OliveName name) {
         this.name = name;
     }
 
