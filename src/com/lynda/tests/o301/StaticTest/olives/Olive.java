@@ -16,6 +16,13 @@ public class Olive {
         this.id = id;
     }
 
+    public Olive(){
+        this.name = OliveName.KALAMATA;
+        this.color = OliveColor.BLACK;
+        this.id = idCounter;
+        idCounter++;
+    }
+
     public Olive(OliveName name, OliveColor color) {
         this.name = name;
         this.color = color;
