@@ -25,7 +25,7 @@ public class MainFinallyBlock {
             e.printStackTrace();
         } finally {
             System.out.println("Executing finally");
-            if(fileReader != null) {
+            if (fileReader != null) {
                 fileReader.close();
             }
             if (bufferedReader != null) {
