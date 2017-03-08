@@ -16,7 +16,7 @@ public class MyFileReader {
                 stringBuilder.append(s);
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("MyFileReader: no such file.");
         }
 
         return stringBuilder.toString();
